@@ -15,6 +15,7 @@
     "lint": "./node_modules/.bin/standard",
     "declaration:build": "rm -f index.d.ts && tsc"
   },
+  "repository": "https://github.com/italodeandra/transmission",
   "main": "index.js",
   "devDependencies": {
     "chai": "^1.9.2",
