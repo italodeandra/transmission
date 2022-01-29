@@ -199,7 +199,7 @@ declare class Transmission extends Transmission_base {
      * @param {Array} fields The fields to return from Transmission about the torrent(s)
      * @returns {Promise}
      */
-    get(ids: any, fields?: any[], ...args: any[]): Promise<any>;
+    get(ids?: any, fields?: any[], ...args: any[]): Promise<any>;
     /**
      * Polls the server and waits for the target state
      * STOPPED
