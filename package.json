@@ -1,6 +1,6 @@
 {
   "author": "Grant Holle <https://github.com/grantholle>",
-  "name": "transmission-promise",
+  "name": "@italodeandra/transmission-promise",
   "description": "An API client for Transmission that uses promises",
   "version": "1.1.5",
   "keywords": [
@@ -8,6 +8,9 @@
     "transmission",
     "bittorrent"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "test": "./node_modules/.bin/mocha --ui bdd --reporter spec --colors",
     "lint": "./node_modules/.bin/standard",
