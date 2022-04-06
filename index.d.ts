@@ -195,11 +195,11 @@ declare class Transmission extends Transmission_base {
     /**
      * Get information on a torrent or torrents
      *
-     * @param {integer|Array} ids An array of ids, a single id, or nothing for all torrents
-     * @param {Array} fields The fields to return from Transmission about the torrent(s)
+     * @param {integer|Array} [ids] An array of ids, a single id, or nothing for all torrents
+     * @param {Array} [fields] The fields to return from Transmission about the torrent(s)
      * @returns {Promise}
      */
-    get(ids?: any, fields?: any[], ...args: any[]): Promise<any>;
+    get(ids?: any, fields?: any[] | undefined, ...args: any[]): Promise<any>;
     /**
      * Polls the server and waits for the target state
      * STOPPED
@@ -300,10 +300,10 @@ declare class Transmission extends Transmission_base {
     /**
      * Gets or sets Transmission session data
      *
-     * @param {Object} settings The settings to set for Transmission
+     * @param {Object} [settings] The settings to set for Transmission
      * @returns {Promise}
      */
-    session(settings: Object): Promise<any>;
+    session(settings?: Object | undefined): Promise<any>;
     /**
      * Gets the session stats
      *

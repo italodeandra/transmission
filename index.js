@@ -344,8 +344,8 @@ class Transmission extends EventEmitter {
   /**
    * Get information on a torrent or torrents
    *
-   * @param {integer|Array} ids An array of ids, a single id, or nothing for all torrents
-   * @param {Array} fields The fields to return from Transmission about the torrent(s)
+   * @param {integer|Array} [ids] An array of ids, a single id, or nothing for all torrents
+   * @param {Array} [fields] The fields to return from Transmission about the torrent(s)
    * @returns {Promise}
    */
   get (ids, fields = []) {
@@ -583,7 +583,7 @@ class Transmission extends EventEmitter {
   /**
    * Gets or sets Transmission session data
    *
-   * @param {Object} settings The settings to set for Transmission
+   * @param {Object} [settings] The settings to set for Transmission
    * @returns {Promise}
    */
   session (settings) {
